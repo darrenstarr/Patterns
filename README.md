@@ -31,3 +31,5 @@ I've invested MANY hours in making this one.
 I started with Mandy's book and it was the first pattern in the first chapter. I had never used Seamly2D before (as I wrote my own program for this purpose) and I had to learn the program and this pattern came out great.
 
 I think I can do more work on the splines/curves, but if someone wants to test it with their sizes and give me feedback, I'd love to update the pattern and fix the issues. Other than the boning channels, I've nearly hand sewn the entire corset and it's coming out great though I'm regretting the cover fabric I chose. Either way, I'll post pictures soon.
+
+More to come

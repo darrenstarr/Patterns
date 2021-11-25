@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vit>
+    <version>0.3.3</version>
+    <read-only>false</read-only>
+    <notes/>
+    <unit>cm</unit>
+    <pm_system>998</pm_system>
+    <personal>
+        <family-name/>
+        <given-name/>
+        <birth-date>1800-01-01</birth-date>
+        <gender>female</gender>
+        <email/>
+    </personal>
+    <body-measurements>
+        <m name="bust_circ" value="124"/>
+        <m name="lowbust_circ" value="108"/>
+        <m name="waist_circ" value="104"/>
+        <m name="highhip_circ" value="124"/>
+        <m name="hip_circ" value="130"/>
+        <m name="across_back_b" value="41"/>
+        <m name="neck_back_to_waist_b" value="43"/>
+        <m name="across_chest_f" value="40.5"/>
+        <m name="bustpoint_to_bustpoint" value="25"/>
+        <m name="waist_to_hip_b" value="22"/>
+        <m name="neck_circ" value="40"/>
+    </body-measurements>
+</vit>
