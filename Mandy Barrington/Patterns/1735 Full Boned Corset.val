@@ -66,10 +66,9 @@
             <point angle="292.412" basePoint="55" id="56" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="P35" p1Line="41" p2Line="54" showPointName="true" type="lineIntersectAxis"/>
             <line firstPoint="41" id="57" lineColor="black" lineType="dotLine" secondPoint="56"/>
             <line firstPoint="56" id="58" lineColor="black" lineType="dotLine" secondPoint="50"/>
-            <point angle="180" basePoint="32" id="59" length="across_chest_f/2" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="P36_1" showPointName="true" type="endLine"/>
-            <point angle="290.574" basePoint="54" id="60" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="P36" p1Line="32" p2Line="59" showPointName="true" type="lineIntersectAxis"/>
-            <point angle="274.192" basePoint="50" id="61" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="P37" p1Line="32" p2Line="59" showPointName="true" type="lineIntersectAxis"/>
-            <line firstPoint="60" id="62" lineColor="black" lineType="dotLine" secondPoint="61"/>
+            <point angle="180" basePoint="32" id="59" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="P36" p1Line="54" p2Line="49" showPointName="true" type="lineIntersectAxis"/>
+            <point angle="0" basePoint="59" id="61" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="P37" p1Line="50" p2Line="49" showPointName="true" type="lineIntersectAxis"/>
+            <line firstPoint="59" id="62" lineColor="black" lineType="dotLine" secondPoint="61"/>
             <point firstPoint="32" id="63" length="across_chest_f/2+Line_P36_P37" lineColor="black" lineType="dotLine" mx="0.132292" my="0.264583" name="P38" secondPoint="59" showPointName="true" type="alongLine"/>
             <point firstPoint="63" id="64" mx="0.132292" my="0.264583" name="P39" secondPoint="12" showPointName="true" type="pointOfIntersection"/>
             <point angle="135" basePoint="64" id="65" length="2" lineColor="black" lineType="dotLine" mx="0.132292" my="0.264583" name="P40" showPointName="true" type="endLine"/>

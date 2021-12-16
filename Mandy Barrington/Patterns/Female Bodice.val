@@ -82,6 +82,37 @@
             <point firstPoint="20" id="74" length="CurrentLength/2" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="C_Line" secondPoint="70" showPointName="true" type="alongLine"/>
             <point firstPoint="74" id="75" mx="0.132292" my="0.264583" name="C_Line2" secondPoint="4" showPointName="true" type="pointOfIntersection"/>
             <line firstPoint="74" id="76" lineColor="black" lineType="dotLine" secondPoint="75"/>
+            <point firstPoint="11" id="77" length="CurrentLength/2" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="P41" secondPoint="19" showPointName="true" type="alongLine"/>
+            <point firstPoint="77" id="78" mx="-1.52366" my="-1.65284" name="P42" secondPoint="8" showPointName="true" type="pointOfIntersection"/>
+            <point firstPoint="77" id="79" mx="0.132292" my="0.264583" name="P43" secondPoint="3" showPointName="true" type="pointOfIntersection"/>
+            <line firstPoint="77" id="80" lineColor="black" lineType="dotLine" secondPoint="79"/>
+            <point firstPoint="78" id="81" length="CurrentLength*2/3" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="P44" secondPoint="79" showPointName="true" type="alongLine"/>
+            <point firstPoint="78" id="82" length="1" lineColor="black" lineType="none" mx="-1.20966" my="0.532973" name="P45" secondPoint="8" showPointName="true" type="alongLine"/>
+            <point firstPoint="78" id="83" length="1" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="P46" secondPoint="9" showPointName="true" type="alongLine"/>
+            <line firstPoint="77" id="84" lineColor="black" lineType="solidLine" secondPoint="83"/>
+            <line firstPoint="83" id="85" lineColor="black" lineType="solidLine" secondPoint="81"/>
+            <line firstPoint="81" id="86" lineColor="black" lineType="solidLine" secondPoint="82"/>
+            <line firstPoint="82" id="87" lineColor="black" lineType="solidLine" secondPoint="77"/>
+            <point firstPoint="49" id="88" length="3" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="P47" secondPoint="45" showPointName="true" type="alongLine"/>
+            <point firstPoint="45" id="89" length="CurrentLength/3" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="P48" secondPoint="44" showPointName="true" type="alongLine"/>
+            <point firstPoint="45" id="90" length="1.5" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="P49" secondPoint="8" showPointName="true" type="alongLine"/>
+            <point firstPoint="45" id="91" length="1.5" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="P50" secondPoint="9" showPointName="true" type="alongLine"/>
+            <line firstPoint="88" id="92" lineColor="black" lineType="solidLine" secondPoint="91"/>
+            <line firstPoint="91" id="93" lineColor="black" lineType="solidLine" secondPoint="89"/>
+            <line firstPoint="89" id="94" lineColor="black" lineType="solidLine" secondPoint="90"/>
+            <line firstPoint="90" id="95" lineColor="black" lineType="solidLine" secondPoint="88"/>
+            <point firstPoint="8" id="97" length="((waist_circ/2 +2.5) /2)-1.3" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="P51" secondPoint="78" showPointName="true" type="alongLine"/>
+            <point firstPoint="9" id="98" length="((waist_circ/2 +2.5) /2)+1.3" lineColor="black" lineType="none" mx="-1.08788" my="-2.17577" name="P52" secondPoint="91" showPointName="true" type="alongLine"/>
+            <line firstPoint="20" id="99" lineColor="black" lineType="solidLine" secondPoint="97"/>
+            <line firstPoint="70" id="100" lineColor="black" lineType="solidLine" secondPoint="98"/>
+            <point firstPoint="3" id="101" length="((hip_circ/2+2.5)/2)-1.3" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="P53" secondPoint="79" showPointName="true" type="alongLine"/>
+            <point firstPoint="4" id="102" length="((hip_circ/2+2.5)/2)+1.3" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="P54" secondPoint="44" showPointName="true" type="alongLine"/>
+            <spline angle1="285.747" angle2="90" color="black" id="103" length1="1.54221" length2="7.36961" penStyle="solidLine" point1="97" point4="101" type="simpleInteractive"/>
+            <spline angle1="252.24" angle2="90" color="black" id="104" length1="0.727901" length2="7.1923" penStyle="solidLine" point1="98" point4="102" type="simpleInteractive"/>
+            <line firstPoint="7" id="105" lineColor="black" lineType="solidLine" secondPoint="3"/>
+            <line firstPoint="101" id="106" lineColor="black" lineType="solidLine" secondPoint="3"/>
+            <line firstPoint="34" id="107" lineColor="black" lineType="solidLine" secondPoint="4"/>
+            <line firstPoint="4" id="108" lineColor="black" lineType="solidLine" secondPoint="102"/>
         </calculation>
         <modeling/>
         <details/>
