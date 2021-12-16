@@ -18,7 +18,15 @@ I'm genuinely hoping to earn enough money from the videos to support my habit of
 
 Let me start by saying, Mandy is among the most talented authors of books for pattern drafting I've come across. I love her work and I've already told my wife I intend to sew every pattern in both of the books at least once. I'm most of the way through sewing the 1735 Fully Boned Corset from volume 1 and it's great. I didn't make videos of this, but I will post pictures. If I ever find someone willing to model it and get there measurements, I'll consider sewing another as I've learned a lot from this experience.
 
+I'll be entirely honest here. Yes, you can use these patterns and my videos as I make them, but you REALLY should not try making these corsets and stays unless either you really really know what you're doing or you have the book. My stuff is not a replacement for the book, I'll using lots of what I read in there.
+
+### Standard Sizes
+
+I've provided files containing all the sizes in the tables in the book. They seemed a little wonky to me, but I'm not really an expert on sizes.
+
 ### 1598 Pair of Bodies
+
+![Screenshot](Mandy%20Barrington/Images/1598%20Pair%20of%20Bones%20Screenshot.png)
 
 Mandy's books are fantastic and this design was truly cool to work with so far. I've made some videos of getting the pattern into Seamly2D, but I've found a good share of errors in this pattern and I have no idea how to contact Mandy about submitting errors or how to fix them. As I tweak the pattern, I expect that I'll resolve the issues myself and then whoever wants to can just use my file.
 
@@ -26,9 +34,20 @@ I've already been experimenting with fitting this pattern and preparing the boni
 
 ### 1735 Fully Boned Corset
 
+![Screenshot](Mandy%20Barrington/Images/1735%20Fully%20Boned%20Corset.png)
+
 I've invested MANY hours in making this one.
 
 I started with Mandy's book and it was the first pattern in the first chapter. I had never used Seamly2D before (as I wrote my own program for this purpose) and I had to learn the program and this pattern came out great.
 
 I think I can do more work on the splines/curves, but if someone wants to test it with their sizes and give me feedback, I'd love to update the pattern and fix the issues. Other than the boning channels, I've nearly hand sewn the entire corset and it's coming out great though I'm regretting the cover fabric I chose. Either way, I'll post pictures soon.
 
+### 1890 Celebrated C.B. Bridal Corset
+
+![Screenshot](Mandy%20Barrington/Images/1890%20Celebrated%20C.B.%20Bridal%20Corset.png)
+
+There was clearly a major quality difference between Mandy's first and second book. There were endless problems with this pattern. there is certainly no doubt this pattern is hers, but I think there's been substantially more added to it by myself.
+
+I can't seem to find the right way to fix her top lines shaping under the arm. I will sew one up for a dummy I 3D printed (it's an intentionally small woman's form for the purpose of testing sizing. Here in Norway, tall women grow on trees, short ones aren't easily found). and I'll see if I can sort out the remaining problems.
+
+This however is the first pattern I've put into Seamly2D where I attempted to make adjustments for all sizes. So, rather than just "eyeballing the curves" as Mandy recommends, I instead make control points to hopefully properly shape all the curves. And when testing in Clo3D, I'm generally within about 0.1mm differences on the seams.
