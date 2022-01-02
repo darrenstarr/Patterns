@@ -51,3 +51,19 @@ There was clearly a major quality difference between Mandy's first and second bo
 I can't seem to find the right way to fix her top lines shaping under the arm. I will sew one up for a dummy I 3D printed (it's an intentionally small woman's form for the purpose of testing sizing. Here in Norway, tall women grow on trees, short ones aren't easily found). and I'll see if I can sort out the remaining problems.
 
 This however is the first pattern I've put into Seamly2D where I attempted to make adjustments for all sizes. So, rather than just "eyeballing the curves" as Mandy recommends, I instead make control points to hopefully properly shape all the curves. And when testing in Clo3D, I'm generally within about 0.1mm differences on the seams.
+
+### 1875 Corded and Quilted Corset
+
+![Screenshot](Mandy%20Barrington/Images/1875%20Corded%20and%20Quilted%20Corset.png)
+
+I was watching a wonderful YouTube channel from Bella Mae's Design
+
+[![YouTube series by Bella Mae's Design](https://img.youtube.com/vi/C6Dcf198U_8/0.jpg)](https://www.youtube.com/watch?v=C6Dcf198U_8)
+
+And Bella Mae did a truly fantastic job eventually constructing a corset she found in [Corsets and Crinolines by Norah Waugh](https://www.amazon.com/Corsets-Crinolines-Norah-Waugh/dp/0878305262) which is a marvelous book that I've personally borrowed from a friend, but I believe will finally break down and buy for myself. In fact, from what I can tell Mandy Barrington has made multiple references to this book in her own.
+
+Well along the pay to Bella Mae's fantastic 1860 corset, she started with this 1875 quilted corset, but with a different series of boning channels. She made several mockups of this design, but she never quite got it right and I believe I know why.
+
+Mandy makes a lot of interesting leaps of faith with regards to measurement. I really really appreciate her books as starting points, but the drafting methods she provides really only work if you're almost a precise body twin of hers. Of course, if you're great at math, it's actually pretty easy to fix most of the problems with her designs. So, I still think her books are treasures I'd never separate with.
+
+Anyway, as always if you find bugs with my designs... let me know. I'll work on fixing them!

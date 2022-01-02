@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pattern>
+    <!--Pattern created with Seamly2D v0.6.0.1 (https://seamly.net).-->
+    <version>0.6.2</version>
+    <unit>cm</unit>
+    <description/>
+    <notes/>
+    <measurements>../Sizes/Size 6.vit</measurements>
+    <increments>
+        <increment description="" formula="2" name="#lacing_gap"/>
+        <increment description="" formula="3" name="#waist_reduction"/>
+        <increment description="" formula="2" name="#gusset_gap"/>
+        <increment description="" formula="(waist_circ - #waist_reduction - #lacing_gap)*11/57" name="#p1_waist"/>
+        <increment description="" formula="(waist_circ - #waist_reduction - #lacing_gap)*17.5/57" name="#p4_waist"/>
+        <increment description="" formula="(bust_circ - #lacing_gap) * 12.2 / 78" name="#p1_bust"/>
+        <increment description="" formula="#p4_waist * 4 / 5" name="#p4_bust"/>
+        <increment description="" formula="(((bust_circ - #lacing_gap) / 2) - #p1_bust - #p4_bust)/2" name="#p2_bust"/>
+        <increment description="" formula="#p4_bust" name="#p2_bust_2"/>
+        <increment description="" formula="((hip_circ - #lacing_gap) / 2 + #gusset_gap) * 13.5 / 43" name="#p1_hip"/>
+        <increment description="" formula="((hip_circ - #lacing_gap) / 2 + #gusset_gap) * 7 / 43" name="#p2_hip"/>
+        <increment description="" formula="((hip_circ - #lacing_gap) / 2 + #gusset_gap) * 17.3 / 43" name="#p3_hip"/>
+        <increment description="" formula="((hip_circ - #lacing_gap) / 2 + #gusset_gap) * 5 / 43" name="#p4_hip"/>
+    </increments>
+    <draw name="Pattern piece 1">
+        <calculation>
+            <point id="1" mx="0.132292" my="0.264583" name="A" showPointName="true" type="single" x="0.79375" y="1.05833"/>
+            <point angle="0" basePoint="1" id="2" length="bust_circ/2+2.5 + 30" lineColor="black" lineType="dotLine" mx="0.132292" my="0.264583" name="B" showPointName="true" type="endLine"/>
+            <point angle="270" basePoint="1" id="3" length="neck_back_to_waist_b+2.5+waist_to_hip_b" lineColor="black" lineType="dotLine" mx="0.132292" my="0.264583" name="S5" showPointName="true" type="endLine"/>
+            <point firstPoint="2" id="4" mx="0.132292" my="0.264583" name="S6" secondPoint="3" showPointName="true" type="pointOfIntersection"/>
+            <line firstPoint="2" id="5" lineColor="black" lineType="dotLine" secondPoint="4"/>
+            <line firstPoint="3" id="6" lineColor="black" lineType="dotLine" secondPoint="4"/>
+            <point angle="270" basePoint="1" id="7" length="2.5" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="P1" showPointName="true" type="endLine"/>
+            <point angle="270" basePoint="7" id="8" length="neck_back_to_waist_b" lineColor="black" lineType="none" mx="-2.12906" my="-0.521975" name="S3" showPointName="true" type="endLine"/>
+            <point firstPoint="2" id="9" mx="0.132292" my="0.264583" name="S4" secondPoint="8" showPointName="true" type="pointOfIntersection"/>
+            <line firstPoint="8" id="10" lineColor="black" lineType="dotLine" secondPoint="9"/>
+            <point firstPoint="7" id="11" length="CurrentLength/2+1.3" lineColor="black" lineType="none" mx="-1.8341" my="0.0679436" name="S1" secondPoint="8" showPointName="true" type="alongLine"/>
+            <point firstPoint="2" id="12" mx="0.132292" my="0.264583" name="S2" secondPoint="11" showPointName="true" type="pointOfIntersection"/>
+            <line firstPoint="11" id="13" lineColor="black" lineType="dotLine" secondPoint="12"/>
+            <point firstPoint="7" id="14" length="CurrentLength/2" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="P6" secondPoint="11" showPointName="true" type="alongLine"/>
+            <point angle="0" basePoint="14" id="15" length="across_back_b/2" lineColor="black" lineType="dotLine" mx="0.132292" my="0.264583" name="P7" showPointName="true" type="endLine"/>
+            <point firstPoint="7" id="16" length="CurrentLength/2-2" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="P8" secondPoint="14" showPointName="true" type="alongLine"/>
+            <point angle="0" basePoint="16" id="17" length="across_back_b/2+1.5" lineColor="black" lineType="dotLine" mx="0.132292" my="0.264583" name="P9" showPointName="true" type="endLine"/>
+            <point firstPoint="15" id="18" mx="0.132292" my="0.264583" name="P10" secondPoint="17" showPointName="true" type="pointOfIntersection"/>
+            <point firstPoint="15" id="19" mx="0.132292" my="0.264583" name="P11" secondPoint="12" showPointName="true" type="pointOfIntersection"/>
+            <point firstPoint="11" id="20" length="(CurrentLength-30)/2-1.3" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="B_Line" secondPoint="12" showPointName="true" type="alongLine"/>
+            <point firstPoint="20" id="21" mx="0.132292" my="0.264583" name="P13" secondPoint="3" showPointName="true" type="pointOfIntersection"/>
+            <point angle="0" basePoint="7" id="22" length="neck_circ/5" lineColor="black" lineType="dotLine" mx="0.132292" my="0.264583" name="P14" showPointName="true" type="endLine"/>
+            <point angle="90" basePoint="22" id="23" length="1.3" lineColor="black" lineType="dotLine" mx="0.132292" my="0.264583" name="P15" showPointName="true" type="endLine"/>
+            <spline angle1="0" angle2="250" color="black" id="24" length1="Line_P1_P14*0.75" length2="Line_P14_P15*0.9" penStyle="dotLine" point1="7" point4="23" type="simpleInteractive"/>
+            <line firstPoint="23" id="25" lineColor="black" lineType="dotLine" secondPoint="17"/>
+            <point angle="45" basePoint="19" id="26" length="2.5" lineColor="black" lineType="dotLine" mx="0.132292" my="0.264583" name="P16" showPointName="true" type="endLine"/>
+            <spline angle1="AngleLine_P15_P9-90" angle2="AngleLine_P6_P7+90" color="black" id="27" length1="2.94445" length2="1" penStyle="dotLine" point1="17" point4="15" type="simpleInteractive"/>
+            <spline angle1="AngleLine_P6_P7-90" angle2="AngleLine_P11_P16+90" color="black" id="28" length1="1" length2="2.97526" penStyle="dotLine" point1="15" point4="26" type="simpleInteractive"/>
+            <spline angle1="AngleLine_P11_P16-90" angle2="180" color="black" id="29" length1="1.5" length2="2" penStyle="dotLine" point1="26" point4="20" type="simpleInteractive"/>
+            <line firstPoint="18" id="30" lineColor="black" lineType="dotLine" secondPoint="19"/>
+            <line firstPoint="20" id="31" lineColor="black" lineType="dotLine" secondPoint="21"/>
+            <point firstPoint="12" id="32" length="neck_back_to_waist_b/10" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="P17" secondPoint="2" showPointName="true" type="alongLine"/>
+            <point firstPoint="2" id="33" length="neck_circ/5-0.7" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="P18" secondPoint="1" showPointName="true" type="alongLine"/>
+            <point firstPoint="2" id="34" length="neck_circ/5+3" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="P19" secondPoint="32" showPointName="true" type="alongLine"/>
+            <line firstPoint="33" id="35" lineColor="black" lineType="dotLine" secondPoint="34"/>
+            <point angle="AngleLine_P18_P19-90" basePoint="2" id="36" length="abs(Line_B_P18*cosD(AngleLine_P18_P19-90))" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="P20" showPointName="true" type="endLine"/>
+            <point firstPoint="2" id="37" length="CurrentLength+1.5" lineColor="black" lineType="dotLine" mx="0.132292" my="0.264583" name="P21" secondPoint="36" showPointName="true" type="alongLine"/>
+            <spline angle1="0" angle2="180" color="black" id="38" length1="0" length2="Line_B_P18/2" penStyle="dotLine" point1="33" point4="34" type="simpleInteractive"/>
+            <point firstPoint="33" id="39" length="Line_P15_P9-0.6" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="P22" secondPoint="1" showPointName="true" type="alongLine"/>
+            <point angle="0" firstPoint="39" id="40" length="5" lineColor="black" lineType="dotLine" mx="0.132292" my="0.264583" name="P23" secondPoint="1" showPointName="true" type="normal"/>
+            <point firstPoint="33" id="41" length="CurrentLength + (bust_circ*3/5-across_chest_f)/3" lineColor="black" lineType="dotLine" mx="0.132292" my="0.264583" name="P24" secondPoint="40" showPointName="true" type="alongLine"/>
+            <point firstPoint="12" id="42" length="bustpoint_to_bustpoint/2" lineColor="black" lineType="none" mx="0.529167" my="-1.66688" name="P25" secondPoint="11" showPointName="true" type="alongLine"/>
+            <point firstPoint="42" id="44" mx="0.132292" my="0.264583" name="P28" secondPoint="4" showPointName="true" type="pointOfIntersection"/>
+            <point firstPoint="42" id="45" mx="0.132292" my="0.264583" name="P27" secondPoint="9" showPointName="true" type="pointOfIntersection"/>
+            <point angle="90.4844" basePoint="42" id="46" lineColor="black" lineType="dotLine" mx="0.132292" my="0.264583" name="P26" p1Line="33" p2Line="41" showPointName="true" type="lineIntersectAxis"/>
+            <line firstPoint="42" id="47" lineColor="black" lineType="dotLine" secondPoint="45"/>
+            <line firstPoint="45" id="48" lineColor="black" lineType="dotLine" secondPoint="44"/>
+            <point firstPoint="42" id="49" length="2.5" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="P29" secondPoint="44" showPointName="true" type="alongLine"/>
+            <point firstPoint="46" id="50" length="2" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="P30" secondPoint="41" showPointName="true" type="alongLine"/>
+            <point firstPoint="50" id="51" length=" (bust_circ*3/5-across_chest_f)/3" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="P31" secondPoint="41" showPointName="true" type="alongLine"/>
+            <point firstPoint="51" id="52" length="CurrentLength/2" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="P33" secondPoint="50" showPointName="true" type="alongLine"/>
+            <line firstPoint="50" id="53" lineColor="black" lineType="dotLine" secondPoint="49"/>
+            <point firstPoint="49" id="54" length="Line_P30_P29" lineColor="black" lineType="dotLine" mx="0.132292" my="0.264583" name="P32" secondPoint="51" showPointName="true" type="alongLine"/>
+            <point angle="AngleLine_P24_P23+90" basePoint="52" id="55" length="Line_P22_P23" lineColor="black" lineType="dotLine" mx="0.132292" my="0.264583" name="P34" showPointName="true" type="endLine"/>
+            <point angle="292.412" basePoint="55" id="56" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="P35" p1Line="41" p2Line="54" showPointName="true" type="lineIntersectAxis"/>
+            <line firstPoint="41" id="57" lineColor="black" lineType="dotLine" secondPoint="56"/>
+            <line firstPoint="56" id="58" lineColor="black" lineType="dotLine" secondPoint="50"/>
+            <point angle="180" basePoint="32" id="59" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="P36" p1Line="54" p2Line="49" showPointName="true" type="lineIntersectAxis"/>
+            <point angle="0" basePoint="59" id="61" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="P37" p1Line="50" p2Line="49" showPointName="true" type="lineIntersectAxis"/>
+            <line firstPoint="59" id="62" lineColor="black" lineType="dotLine" secondPoint="61"/>
+            <point firstPoint="32" id="63" length="across_chest_f/2+Line_P36_P37" lineColor="black" lineType="dotLine" mx="0.132292" my="0.264583" name="P38" secondPoint="59" showPointName="true" type="alongLine"/>
+            <point firstPoint="63" id="64" mx="0.132292" my="0.264583" name="P39" secondPoint="12" showPointName="true" type="pointOfIntersection"/>
+            <point angle="135" basePoint="64" id="65" length="2" lineColor="black" lineType="dotLine" mx="0.132292" my="0.264583" name="P40" showPointName="true" type="endLine"/>
+            <spline angle1="AngleLine_P24_P35-90" angle2="90" color="black" id="66" length1="2.5" length2="3" penStyle="dotLine" point1="41" point4="63" type="simpleInteractive"/>
+            <spline angle1="-90" angle2="AngleLine_P39_P40-90" color="black" id="67" length1="1" length2="1" penStyle="dotLine" point1="63" point4="65" type="simpleInteractive"/>
+            <line firstPoint="33" id="69" lineColor="black" lineType="dotLine" secondPoint="50"/>
+            <point firstPoint="11" id="70" length="(CurrentLength+30)/2-1.3" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="P12_2" secondPoint="12" showPointName="true" type="alongLine"/>
+            <point firstPoint="70" id="71" mx="0.132292" my="0.264583" name="P13_2" secondPoint="4" showPointName="true" type="pointOfIntersection"/>
+            <spline angle1="AngleLine_P39_P40+90" angle2="0" color="black" id="72" length1="2.5" length2="0" penStyle="dotLine" point1="65" point4="70" type="simpleInteractive"/>
+            <line firstPoint="70" id="73" lineColor="black" lineType="dotLine" secondPoint="71"/>
+            <point firstPoint="20" id="74" length="CurrentLength/2" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="C_Line" secondPoint="70" showPointName="true" type="alongLine"/>
+            <point firstPoint="74" id="75" mx="0.132292" my="0.264583" name="C_Line2" secondPoint="4" showPointName="true" type="pointOfIntersection"/>
+            <line firstPoint="74" id="76" lineColor="black" lineType="dotLine" secondPoint="75"/>
+            <point firstPoint="3" id="77" mx="-1.73578" my="-0.276175" name="S7" secondPoint="49" showPointName="true" type="pointOfIntersection"/>
+            <point firstPoint="4" id="78" mx="0.132292" my="0.264583" name="S8" secondPoint="77" showPointName="true" type="pointOfIntersection"/>
+            <line firstPoint="77" id="79" lineColor="black" lineType="dotLine" secondPoint="78"/>
+            <point firstPoint="8" id="80" length="CurrentLength/3" lineColor="black" lineType="none" mx="-1.44082" my="-0.227016" name="S9" secondPoint="77" showPointName="true" type="alongLine"/>
+            <point firstPoint="4" id="81" mx="0.132292" my="0.264583" name="S10" secondPoint="80" showPointName="true" type="pointOfIntersection"/>
+            <line firstPoint="80" id="82" lineColor="black" lineType="dotLine" secondPoint="81"/>
+            <point firstPoint="3" id="83" length="CurrentLength/2" lineColor="black" lineType="none" mx="-2.27199" my="-0.496264" name="S11" secondPoint="8" showPointName="true" type="alongLine"/>
+            <point firstPoint="4" id="84" mx="0.132292" my="0.264583" name="S12" secondPoint="83" showPointName="true" type="pointOfIntersection"/>
+            <line firstPoint="83" id="85" lineColor="black" lineType="dotLine" secondPoint="84"/>
+            <point firstPoint="3" id="86" length="CurrentLength/2" lineColor="black" lineType="none" mx="-2.54589" my="0.295017" name="S13" secondPoint="83" showPointName="true" type="alongLine"/>
+            <point firstPoint="4" id="87" mx="0.132292" my="0.264583" name="S14" secondPoint="86" showPointName="true" type="pointOfIntersection"/>
+            <line firstPoint="87" id="88" lineColor="black" lineType="dotLine" secondPoint="86"/>
+            <point firstPoint="8" id="89" length="#p1_waist" lineColor="black" lineType="none" mx="0.662686" my="0.131985" name="S15" secondPoint="9" showPointName="true" type="alongLine"/>
+            <point firstPoint="77" id="90" length="#p1_bust" lineColor="black" lineType="none" mx="0.926371" my="-1.08535" name="S16" secondPoint="78" showPointName="true" type="alongLine"/>
+            <point firstPoint="86" id="91" length="#p1_hip" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="S17" secondPoint="87" showPointName="true" type="alongLine"/>
+            <line firstPoint="89" id="92" lineColor="black" lineType="dotLine" secondPoint="90"/>
+            <line firstPoint="89" id="93" lineColor="black" lineType="dotLine" secondPoint="91"/>
+            <point firstPoint="11" id="94" length="1" lineColor="black" lineType="none" mx="-2.03074" my="-0.669454" name="S18" secondPoint="1" showPointName="true" type="alongLine"/>
+            <point firstPoint="90" id="96" length="0.5" lineColor="black" lineType="dotLine" mx="0.608542" my="0.264583" name="S20" secondPoint="89" showPointName="true" type="alongLine"/>
+            <point angle="0" basePoint="94" id="97" length="Line_S7_S16*2/3" lineColor="black" lineType="dashLine" mx="0.132292" my="0.264583" name="S18a" showPointName="true" type="endLine"/>
+            <point firstPoint="11" id="98" length="Line_S7_S16*3/5" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="S19" secondPoint="19" showPointName="true" type="alongLine"/>
+            <line firstPoint="98" id="99" lineColor="black" lineType="dotLine" secondPoint="96"/>
+            <point firstPoint="98" id="100" length="CurrentLength/2" lineColor="black" lineType="none" mx="0.978959" my="-2.06375" name="S21" secondPoint="96" showPointName="true" type="alongLine"/>
+            <point angle="0" firstPoint="100" id="101" length="0.5" lineColor="black" lineType="dotLine" mx="-2.38125" my="1.21709" name="S22" secondPoint="98" showPointName="true" type="normal"/>
+            <point angle="0" firstPoint="101" id="102" length="Line_S19_S21/2" lineColor="black" lineType="none" mx="-2.83104" my="0.608541" name="S22a" secondPoint="100" showPointName="true" type="normal"/>
+            <point firstPoint="102" id="103" length="CurrentLength*2" lineColor="black" lineType="dashLine" mx="-1.98437" my="0.846666" name="S22b" secondPoint="101" showPointName="true" type="alongLine"/>
+            <point firstPoint="96" id="104" length="CurrentLength/5" lineColor="black" lineType="dashLine" mx="-2.32833" my="1.74625" name="S20a" secondPoint="101" showPointName="true" type="alongLine"/>
+            <spline color="black" id="105" penStyle="solidLine" type="cubicBezierPath">
+                <pathPoint pSpline="94"/>
+                <pathPoint pSpline="97"/>
+                <pathPoint pSpline="102"/>
+                <pathPoint pSpline="101"/>
+                <pathPoint pSpline="103"/>
+                <pathPoint pSpline="104"/>
+                <pathPoint pSpline="96"/>
+            </spline>
+            <point firstPoint="8" id="106" length="CurrentLength/2" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="S23" secondPoint="89" showPointName="true" type="alongLine"/>
+            <point firstPoint="106" id="107" length="2" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="S24" secondPoint="89" showPointName="true" type="alongLine"/>
+            <point firstPoint="106" id="108" mx="0.132292" my="0.264583" name="S25" secondPoint="86" showPointName="true" type="pointOfIntersection"/>
+            <point firstPoint="107" id="109" mx="0.132292" my="0.264583" name="S26" secondPoint="86" showPointName="true" type="pointOfIntersection"/>
+            <line firstPoint="107" id="110" lineColor="black" lineType="dotLine" secondPoint="109"/>
+            <line firstPoint="106" id="111" lineColor="black" lineType="dotLine" secondPoint="108"/>
+            <point firstPoint="86" id="112" length="1" lineColor="black" lineType="none" mx="-2.1362" my="0.89976" name="S27" secondPoint="3" showPointName="true" type="alongLine"/>
+            <point firstPoint="108" id="113" length="1" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="S28" secondPoint="106" showPointName="true" type="alongLine"/>
+            <point firstPoint="109" id="114" length="2" lineColor="black" lineType="none" mx="0.132292" my="1.28117" name="S29" secondPoint="107" showPointName="true" type="alongLine"/>
+            <point angle="0" basePoint="112" id="115" length="Line_S13_S17*1/20" lineColor="black" lineType="dashLine" mx="0.132292" my="0.264583" name="S27a" showPointName="true" type="endLine"/>
+            <point firstPoint="113" id="116" length="-CurrentLength/2" lineColor="black" lineType="dashLine" mx="-0.710334" my="0.601637" name="S28a" secondPoint="114" showPointName="true" type="alongLine"/>
+            <spline color="black" id="117" penStyle="solidLine" point1="112" point2="115" point3="116" point4="113" type="cubicBezier"/>
+            <point angle="0" basePoint="83" id="118" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="S17a" p1Line="89" p2Line="91" showPointName="true" type="lineIntersectAxis"/>
+            <point firstPoint="91" id="119" length="CurrentLength/2" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="S30" secondPoint="118" showPointName="true" type="alongLine"/>
+            <point firstPoint="119" id="120" length="CurrentLength/5" lineColor="black" lineType="dashLine" mx="-0.795897" my="0.971775" name="S30a" secondPoint="114" showPointName="true" type="alongLine"/>
+            <point angle="0" firstPoint="114" id="121" length="Line_S30_S30a" lineColor="black" lineType="dashLine" mx="1.10468" my="0.308782" name="S29a" secondPoint="109" showPointName="true" type="normal"/>
+            <spline color="black" id="122" penStyle="solidLine" point1="119" point2="120" point3="121" point4="114" type="cubicBezier"/>
+            <point angle="0" basePoint="80" id="123" lineColor="black" lineType="none" mx="0.706885" my="0.352982" name="S31" p1Line="90" p2Line="89" showPointName="true" type="lineIntersectAxis"/>
+            <point firstPoint="123" id="124" length="0.3" lineColor="black" lineType="dotLine" mx="-1.94508" my="0.176184" name="S32" secondPoint="80" showPointName="true" type="alongLine"/>
+            <point angle="AngleLine_S20_S15" basePoint="124" id="125" length="Line_S31_S15/3" lineColor="black" lineType="none" mx="-3.31527" my="0.0435856" name="S32a" showPointName="true" type="endLine"/>
+            <point firstPoint="125" id="126" length="CurrentLength*2" lineColor="black" lineType="dashLine" mx="0.132292" my="0.264583" name="S32b" secondPoint="124" showPointName="true" type="alongLine"/>
+            <line firstPoint="119" id="127" lineColor="black" lineType="solidLine" secondPoint="89"/>
+            <point firstPoint="89" id="128" length="-Line_S32_S32a/2" lineColor="black" lineType="dashLine" mx="1.59088" my="-0.619407" name="S15a" secondPoint="119" showPointName="true" type="alongLine"/>
+            <point angle="0" firstPoint="96" id="129" length="Line_S15_S15a" lineColor="black" lineType="dashLine" mx="0.132292" my="0.264583" name="S20b" secondPoint="104" showPointName="true" type="normal"/>
+            <spline color="black" id="130" penStyle="solidLine" type="cubicBezierPath">
+                <pathPoint pSpline="96"/>
+                <pathPoint pSpline="129"/>
+                <pathPoint pSpline="126"/>
+                <pathPoint pSpline="124"/>
+                <pathPoint pSpline="125"/>
+                <pathPoint pSpline="128"/>
+                <pathPoint pSpline="89"/>
+            </spline>
+            <line firstPoint="113" id="131" lineColor="black" lineType="solidLine" secondPoint="106"/>
+            <line firstPoint="106" id="132" lineColor="black" lineType="solidLine" secondPoint="107"/>
+            <line firstPoint="107" id="133" lineColor="black" lineType="solidLine" secondPoint="114"/>
+            <line firstPoint="94" id="134" lineColor="black" lineType="solidLine" secondPoint="112"/>
+            <point firstPoint="9" id="135" length="#p4_waist" lineColor="black" lineType="none" mx="-2.41247" my="0.0183158" name="S33" secondPoint="8" showPointName="true" type="alongLine"/>
+            <point firstPoint="135" id="136" mx="-2.40771" my="-1.74625" name="S34" secondPoint="78" showPointName="true" type="pointOfIntersection"/>
+            <line firstPoint="135" id="137" lineColor="black" lineType="dotLine" secondPoint="136"/>
+            <point firstPoint="4" id="138" length="#p4_hip" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="S35" secondPoint="75" showPointName="true" type="alongLine"/>
+            <point firstPoint="138" id="139" mx="0.132292" my="0.264583" name="S36" secondPoint="9" showPointName="true" type="pointOfIntersection"/>
+            <line firstPoint="138" id="140" lineColor="black" lineType="dotLine" secondPoint="139"/>
+            <point firstPoint="135" id="141" mx="-1.95792" my="0.238125" name="S37" secondPoint="81" showPointName="true" type="pointOfIntersection"/>
+            <point firstPoint="141" id="142" length="0.3" lineColor="black" lineType="none" mx="0.767292" my="0.264583" name="S38" secondPoint="81" showPointName="true" type="alongLine"/>
+            <point angle="0" firstPoint="142" id="143" length="Line_S32_S32a" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="S38a" secondPoint="141" showPointName="true" type="normal"/>
+            <point firstPoint="143" id="144" length="CurrentLength*2" lineColor="black" lineType="dashLine" mx="0.132292" my="0.264583" name="S38b" secondPoint="142" showPointName="true" type="alongLine"/>
+            <point angle="280.093" basePoint="136" id="145" length="Line_S20_S20b" lineColor="black" lineType="dashLine" mx="-3.41312" my="-1.24354" name="S34a" showPointName="true" type="endLine"/>
+            <point angle="84" basePoint="135" id="146" length="Line_S15_S15a" lineColor="black" lineType="dashLine" mx="0.793053" my="-0.778724" name="S33a" showPointName="true" type="endLine"/>
+            <spline color="black" id="147" penStyle="solidLine" type="cubicBezierPath">
+                <pathPoint pSpline="135"/>
+                <pathPoint pSpline="146"/>
+                <pathPoint pSpline="143"/>
+                <pathPoint pSpline="142"/>
+                <pathPoint pSpline="144"/>
+                <pathPoint pSpline="145"/>
+                <pathPoint pSpline="136"/>
+            </spline>
+            <point id="148" length="SplPath_S20_S15" mx="-3.04271" my="-1.48167" name="S39" showPointName="true" splinePath="147" type="cutSplinePath"/>
+            <point angle="225" basePoint="139" id="149" length="Line_S4_S33/5 + 1" lineColor="black" lineType="dotLine" mx="0.132292" my="0.264583" name="S40" showPointName="true" type="endLine"/>
+            <point firstPoint="138" id="150" mx="-2.73264" my="0.264583" name="S35a" secondPoint="87" showPointName="true" type="pointOfIntersection"/>
+            <point firstPoint="138" id="151" length="CurrentLength/2" lineColor="black" lineType="none" mx="-2.33941" my="-0.128643" name="S41" secondPoint="150" showPointName="true" type="alongLine"/>
+            <point firstPoint="135" id="324" length="CurrentLength/2" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="S33b" secondPoint="45" showPointName="true" type="alongLine"/>
+            <point angle="0" firstPoint="149" id="325" length="Line_S36_S40*2/3" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="S40a" secondPoint="139" showPointName="true" type="normal"/>
+            <point firstPoint="325" id="326" length="CurrentLength*2" lineColor="black" lineType="dashLine" mx="0.132292" my="0.264583" name="S40b" secondPoint="149" showPointName="true" type="alongLine"/>
+            <point firstPoint="151" id="327" mx="0.132292" my="0.264583" name="S41a" secondPoint="84" showPointName="true" type="pointOfIntersection"/>
+            <spline color="black" duplicate="1" id="152" penStyle="solidLine" type="cubicBezierPath">
+                <pathPoint pSpline="135"/>
+                <pathPoint pSpline="324"/>
+                <pathPoint pSpline="325"/>
+                <pathPoint pSpline="149"/>
+                <pathPoint pSpline="326"/>
+                <pathPoint pSpline="327"/>
+                <pathPoint pSpline="151"/>
+            </spline>
+            <spline angle1="326.592" angle2="179.193" color="black" id="153" length1="0.750437" length2="0.946424" penStyle="solidLine" point1="151" point4="4" type="simpleInteractive"/>
+            <point firstPoint="78" id="154" length="CurrentLength/5" lineColor="black" lineType="none" mx="0.405922" my="-1.26775" name="S42" secondPoint="136" showPointName="true" type="alongLine"/>
+            <point firstPoint="154" id="155" length="Line_S8_S42/2" lineColor="black" lineType="none" mx="-1.23586" my="-1.56874" name="S43" secondPoint="136" showPointName="true" type="alongLine"/>
+            <point firstPoint="136" id="156" length="CurrentLength*2/5" lineColor="black" lineType="none" mx="-1.97466" my="-1.10356" name="S44" secondPoint="78" showPointName="true" type="alongLine"/>
+            <point firstPoint="156" id="157" length="Line_S8_S42/2" lineColor="black" lineType="none" mx="-1.90546" my="-1.19199" name="S45" secondPoint="78" showPointName="true" type="alongLine"/>
+            <point firstPoint="156" id="158" mx="-1.78312" my="0.319309" name="S46" secondPoint="81" showPointName="true" type="pointOfIntersection"/>
+            <point firstPoint="157" id="159" mx="0.132292" my="0.264583" name="S47" secondPoint="81" showPointName="true" type="pointOfIntersection"/>
+            <point firstPoint="155" id="160" mx="-1.6463" my="0.23722" name="S48" secondPoint="81" showPointName="true" type="pointOfIntersection"/>
+            <point firstPoint="154" id="161" mx="0.269107" my="0.0183158" name="S49" secondPoint="81" showPointName="true" type="pointOfIntersection"/>
+            <line firstPoint="156" id="162" lineColor="black" lineType="dotLine" secondPoint="158"/>
+            <line firstPoint="157" id="163" lineColor="black" lineType="dotLine" secondPoint="159"/>
+            <line firstPoint="155" id="164" lineColor="black" lineType="dotLine" secondPoint="160"/>
+            <line firstPoint="154" id="165" lineColor="black" lineType="dotLine" secondPoint="161"/>
+            <point firstPoint="158" id="166" length="CurrentLength/2" lineColor="black" lineType="none" mx="-0.60651" my="0.456124" name="S50" secondPoint="159" showPointName="true" type="alongLine"/>
+            <point firstPoint="160" id="167" length="CurrentLength/2" lineColor="black" lineType="none" mx="-0.633873" my="-1.54138" name="S51" secondPoint="161" showPointName="true" type="alongLine"/>
+            <point firstPoint="156" id="168" length="-0.5" lineColor="black" lineType="dotLine" mx="-1.86521" my="-1.65083" name="S52" secondPoint="158" showPointName="true" type="alongLine"/>
+            <point firstPoint="157" id="169" length="-1.2" lineColor="black" lineType="dotLine" mx="-1.77271" my="-1.905" name="S53" secondPoint="159" showPointName="true" type="alongLine"/>
+            <point firstPoint="155" id="170" length="0.5" lineColor="black" lineType="none" mx="-1.55296" my="0.208408" name="S54" secondPoint="160" showPointName="true" type="alongLine"/>
+            <point firstPoint="154" id="171" length="1.5" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="S55" secondPoint="161" showPointName="true" type="alongLine"/>
+            <point firstPoint="78" id="172" length="2" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="S56" secondPoint="81" showPointName="true" type="alongLine"/>
+            <point angle="0" firstPoint="167" id="173" length="1" lineColor="black" lineType="dotLine" mx="-0.899583" my="1.40229" name="S57" secondPoint="160" showPointName="true" type="normal"/>
+            <point firstPoint="168" id="175" length="CurrentLength/2" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="S52a" secondPoint="158" showPointName="true" type="alongLine"/>
+            <spline color="black" id="176" penStyle="solidLine" point1="168" point2="175" point3="166" point4="166" type="cubicBezier"/>
+            <point firstPoint="169" id="177" length="CurrentLength/2" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="S53a" secondPoint="159" showPointName="true" type="alongLine"/>
+            <spline color="black" id="178" penStyle="solidLine" point1="166" point2="166" point3="177" point4="169" type="cubicBezier"/>
+            <spline angle1="341.2" angle2="143.448" color="black" id="179" length1="2.03553" length2="0.465819" penStyle="solidLine" point1="169" point4="170" type="simpleInteractive"/>
+            <spline angle1="0" angle2="0" color="black" id="184" length1="2.01603" length2="0" penStyle="solidLine" point1="171" point4="172" type="simpleInteractive"/>
+            <spline angle1="0" angle2="180" color="black" id="185" length1="0" length2="3.97033" penStyle="solidLine" point1="148" point4="168" type="simpleInteractive"/>
+            <point firstPoint="160" id="200" mx="-2.32833" my="0.423333" name="S48a" secondPoint="173" showPointName="true" type="pointOfIntersection"/>
+            <point firstPoint="161" id="201" mx="0.132292" my="0.264583" name="S49a" secondPoint="173" showPointName="true" type="pointOfIntersection"/>
+            <line firstPoint="160" id="202" lineColor="black" lineType="dotLine" secondPoint="200"/>
+            <line firstPoint="200" id="203" lineColor="black" lineType="dotLine" secondPoint="201"/>
+            <line firstPoint="201" id="204" lineColor="black" lineType="dotLine" secondPoint="161"/>
+            <point firstPoint="170" id="205" length="CurrentLength/2" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="S54a" secondPoint="200" showPointName="true" type="alongLine"/>
+            <point firstPoint="171" id="206" length="CurrentLength/2" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="S55a" secondPoint="201" showPointName="true" type="alongLine"/>
+            <spline color="black" id="207" penStyle="solidLine" point1="170" point2="205" point3="173" point4="173" type="cubicBezier"/>
+            <spline color="black" id="208" penStyle="solidLine" point1="173" point2="173" point3="206" point4="171" type="cubicBezier"/>
+            <line firstPoint="172" id="209" lineColor="black" lineType="solidLine" secondPoint="4"/>
+            <point firstPoint="21" id="232" mx="-0.524326" my="-2.74204" name="P13a" secondPoint="8" showPointName="true" type="pointOfIntersection"/>
+            <point firstPoint="232" id="233" length="1" lineColor="black" lineType="none" mx="-1.25006" my="-1.67071" name="S58" secondPoint="8" showPointName="true" type="alongLine"/>
+            <point firstPoint="233" id="234" length="2" lineColor="black" lineType="none" mx="0.408763" my="-1.73983" name="S59" secondPoint="232" showPointName="true" type="alongLine"/>
+            <line firstPoint="233" id="235" lineColor="black" lineType="solidLine" secondPoint="234"/>
+            <point firstPoint="21" id="236" mx="0.132292" my="0.264583" name="P13b" secondPoint="86" showPointName="true" type="pointOfIntersection"/>
+            <point firstPoint="236" id="237" length="#p2_hip/2" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="S60" secondPoint="86" showPointName="true" type="alongLine"/>
+            <point firstPoint="237" id="238" length="#p2_hip" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="S61" secondPoint="236" showPointName="true" type="alongLine"/>
+            <line firstPoint="233" id="239" lineColor="black" lineType="dotLine" secondPoint="237"/>
+            <line firstPoint="234" id="240" lineColor="black" lineType="dotLine" secondPoint="238"/>
+            <point firstPoint="233" id="241" length="Line_S28_S23" lineColor="black" lineType="solidLine" mx="-1.70986" my="-0.572761" name="S62" secondPoint="237" showPointName="true" type="alongLine"/>
+            <point firstPoint="234" id="242" length="Line_S29_S24" lineColor="black" lineType="solidLine" mx="0.132292" my="0.264583" name="S63" secondPoint="238" showPointName="true" type="alongLine"/>
+            <point angle="0" firstPoint="242" id="243" length="Line_S29_S29a" lineColor="black" lineType="dashLine" mx="-1.11183" my="0.817525" name="S63a" secondPoint="234" showPointName="true" type="normal"/>
+            <point angle="(90+AngleLine_S58_S62)+(AngleLine_S28_S28a-180)/2" basePoint="241" id="244" length="Line_S28_S28a" lineColor="black" lineType="dotLine" mx="0.132292" my="0.264583" name="S62a" showPointName="true" type="endLine"/>
+            <spline color="black" id="245" penStyle="solidLine" point1="241" point2="244" point3="243" point4="242" type="cubicBezier"/>
+            <point firstPoint="75" id="252" mx="-2.35088" my="-1.7929" name="S64" secondPoint="9" showPointName="true" type="pointOfIntersection"/>
+            <point firstPoint="75" id="253" mx="0.132292" my="0.264583" name="S65" secondPoint="87" showPointName="true" type="pointOfIntersection"/>
+            <point firstPoint="253" id="254" length="#p3_hip/5" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="S66" secondPoint="236" showPointName="true" type="alongLine"/>
+            <point angle="0" basePoint="83" id="255" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="S67" p1Line="254" p2Line="252" showPointName="true" type="lineIntersectAxis"/>
+            <point firstPoint="255" id="256" length="#p3_hip" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="S68" secondPoint="84" showPointName="true" type="alongLine"/>
+            <line firstPoint="252" id="257" lineColor="black" lineType="dotLine" secondPoint="256"/>
+            <point firstPoint="252" id="258" length="CurrentLength*2/5" lineColor="black" lineType="none" mx="-0.931925" my="0.335531" name="S69" secondPoint="256" showPointName="true" type="alongLine"/>
+            <point angle="0" firstPoint="258" id="259" length="#p4_waist/5-1" lineColor="black" lineType="dotLine" mx="0.132292" my="0.264583" name="S70" secondPoint="256" showPointName="true" type="normal"/>
+            <line firstPoint="252" id="261" lineColor="black" lineType="dotLine" secondPoint="254"/>
+            <point firstPoint="252" id="262" length="Line_S30_S15" lineColor="black" lineType="solidLine" mx="0.132292" my="0.264583" name="S72" secondPoint="254" showPointName="true" type="alongLine"/>
+            <point firstPoint="259" id="263" mx="0.132292" my="0.264583" name="S70a" secondPoint="252" showPointName="true" type="pointOfIntersection"/>
+            <point firstPoint="252" id="264" length="CurrentLength/2" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="S64a" secondPoint="263" showPointName="true" type="alongLine"/>
+            <point firstPoint="252" id="265" length="CurrentLength/2" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="S64b" secondPoint="264" showPointName="true" type="alongLine"/>
+            <point angle="90" basePoint="265" id="266" length="Line_S69_S70/5" lineColor="black" lineType="dotLine" mx="-0.132291" my="-1.905" name="S64c" showPointName="true" type="endLine"/>
+            <line firstPoint="259" id="267" lineColor="black" lineType="dotLine" secondPoint="263"/>
+            <point angle="125" basePoint="256" id="269" length="1.1" lineColor="black" lineType="dashLine" mx="0.132292" my="0.264583" name="S68b" showPointName="true" type="endLine"/>
+            <point angle="0" firstPoint="259" id="270" length="Line_S64_S68/5" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="S70b" secondPoint="258" showPointName="true" type="normal"/>
+            <point firstPoint="270" id="271" length="CurrentLength*2" lineColor="black" lineType="dashLine" mx="0.132292" my="0.264583" name="S70c" secondPoint="259" showPointName="true" type="alongLine"/>
+            <point firstPoint="266" id="272" length="Line_S64_S64b/2" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="S64d" secondPoint="271" showPointName="true" type="alongLine"/>
+            <point firstPoint="272" id="273" length="CurrentLength*2" lineColor="black" lineType="dashLine" mx="0.132292" my="0.264583" name="S64e" secondPoint="266" showPointName="true" type="alongLine"/>
+            <spline color="black" id="274" penStyle="solidLine" type="cubicBezierPath">
+                <pathPoint pSpline="252"/>
+                <pathPoint pSpline="252"/>
+                <pathPoint pSpline="273"/>
+                <pathPoint pSpline="266"/>
+                <pathPoint pSpline="272"/>
+                <pathPoint pSpline="271"/>
+                <pathPoint pSpline="259"/>
+                <pathPoint pSpline="270"/>
+                <pathPoint pSpline="269"/>
+                <pathPoint pSpline="256"/>
+            </spline>
+            <point angle="Angle2SplPath_S64_S68+180" basePoint="256" id="275" length="SplPath_S33_S41_1-SplPath_S64_S68" lineColor="black" lineType="solidLine" mx="0.132292" my="0.264583" name="S71" showPointName="true" type="endLine"/>
+            <point angle="0" firstPoint="262" id="276" length="Line_S72_S66" lineColor="black" lineType="dashLine" mx="0.132292" my="0.264583" name="S72a" secondPoint="254" showPointName="true" type="normal"/>
+            <line firstPoint="275" id="277" lineColor="black" lineType="dotLine" secondPoint="262"/>
+            <point firstPoint="275" id="278" length="Line_S72_S72a" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="S71a" secondPoint="262" showPointName="true" type="alongLine"/>
+            <spline color="black" id="279" penStyle="solidLine" point1="275" point2="278" point3="276" point4="262" type="cubicBezier"/>
+            <point firstPoint="232" id="287" mx="0.264059" my="0.352428" name="P13c" secondPoint="90" showPointName="true" type="pointOfIntersection"/>
+            <point firstPoint="287" id="288" length="#p2_bust/2" lineColor="black" lineType="none" mx="-1.36107" my="0.659884" name="S73" secondPoint="90" showPointName="true" type="alongLine"/>
+            <point firstPoint="288" id="289" length="CurrentLength*2" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="S74" secondPoint="287" showPointName="true" type="alongLine"/>
+            <point firstPoint="232" id="290" mx="-1.5875" my="1.13771" name="P13d" secondPoint="80" showPointName="true" type="pointOfIntersection"/>
+            <point firstPoint="290" id="291" length="0.5" lineColor="black" lineType="none" mx="-2.69875" my="0.3175" name="S75" secondPoint="123" showPointName="true" type="alongLine"/>
+            <point firstPoint="291" id="292" length="CurrentLength*2" lineColor="black" lineType="solidLine" mx="0.634698" my="0.543698" name="S76" secondPoint="290" showPointName="true" type="alongLine"/>
+            <point firstPoint="291" id="293" length="Spl_S52_S50" lineColor="black" lineType="solidLine" mx="-1.97598" my="-1.00917" name="S77" secondPoint="288" showPointName="true" type="alongLine"/>
+            <point firstPoint="292" id="294" length="Spl_S50_S53" lineColor="black" lineType="solidLine" mx="0.132292" my="0.264583" name="S78" secondPoint="289" showPointName="true" type="alongLine"/>
+            <point angle="0" firstPoint="293" id="295" length="1" lineColor="black" lineType="dashLine" mx="0.132292" my="0.264583" name="S77a" secondPoint="291" showPointName="true" type="normal"/>
+            <point angle="0" firstPoint="294" id="296" length="-1" lineColor="black" lineType="dashLine" mx="-0.15875" my="-1.5875" name="S78a" secondPoint="292" showPointName="true" type="normal"/>
+            <spline color="black" id="297" penStyle="solidLine" point1="293" point2="295" point3="296" point4="294" type="cubicBezier"/>
+            <point firstPoint="252" id="304" mx="-1.21545" my="-1.31472" name="C_Line3" secondPoint="77" showPointName="true" type="pointOfIntersection"/>
+            <point firstPoint="75" id="305" mx="0.20324" my="-1.58006" name="CLine_4" secondPoint="80" showPointName="true" type="pointOfIntersection"/>
+            <point firstPoint="304" id="306" length="#p2_bust/2" lineColor="black" lineType="none" mx="-0.0852398" my="-1.36691" name="S79" secondPoint="289" showPointName="true" type="alongLine"/>
+            <point firstPoint="306" id="307" length="CurrentLength*2" lineColor="black" lineType="none" mx="0.431398" my="-1.31252" name="S80" secondPoint="304" showPointName="true" type="alongLine"/>
+            <point firstPoint="305" id="308" length="1" lineColor="black" lineType="none" mx="-1.03187" my="1.32292" name="S81" secondPoint="252" showPointName="true" type="alongLine"/>
+            <point angle="0" firstPoint="308" id="309" length="0.5" lineColor="black" lineType="none" mx="-1.905" my="0.264583" name="S82" secondPoint="305" showPointName="true" type="normal"/>
+            <point firstPoint="309" id="310" length="CurrentLength*2" lineColor="black" lineType="solidLine" mx="0.132292" my="0.264583" name="S83" secondPoint="308" showPointName="true" type="alongLine"/>
+            <line firstPoint="309" id="311" lineColor="black" lineType="dotLine" secondPoint="306"/>
+            <line firstPoint="310" id="312" lineColor="black" lineType="dotLine" secondPoint="307"/>
+            <point firstPoint="309" id="313" length="Spl_S54_S57" lineColor="black" lineType="solidLine" mx="0.132292" my="0.264583" name="S84" secondPoint="306" showPointName="true" type="alongLine"/>
+            <point firstPoint="310" id="314" length="Spl_S57_S55" lineColor="black" lineType="solidLine" mx="0.132292" my="0.264583" name="S85" secondPoint="307" showPointName="true" type="alongLine"/>
+            <point angle="0" firstPoint="313" id="315" length="1" lineColor="black" lineType="dashLine" mx="-0.384346" my="-1.36691" name="S84a" secondPoint="309" showPointName="true" type="normal"/>
+            <point angle="0" firstPoint="314" id="316" length="1" lineColor="black" lineType="dashLine" mx="-0.737835" my="-1.36691" name="S85a" secondPoint="307" showPointName="true" type="normal"/>
+            <spline color="black" id="317" penStyle="solidLine" point1="313" point2="315" point3="316" point4="314" type="cubicBezier"/>
+        </calculation>
+        <modeling>
+            <spline id="186" idObject="117" inUse="true" type="modelingSpline"/>
+            <point id="187" idObject="112" inUse="true" mx="-2.1362" my="0.89976" showPointName="true" type="modeling"/>
+            <point id="188" idObject="94" inUse="true" mx="-2.03074" my="-0.669454" showPointName="true" type="modeling"/>
+            <spline id="189" idObject="105" inUse="true" type="modelingPath"/>
+            <point id="190" idObject="96" inUse="true" mx="0.608542" my="0.264583" showPointName="true" type="modeling"/>
+            <spline id="191" idObject="130" inUse="true" type="modelingPath"/>
+            <point id="192" idObject="89" inUse="true" mx="0.662686" my="0.131985" showPointName="true" type="modeling"/>
+            <point id="193" idObject="119" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <spline id="194" idObject="122" inUse="true" type="modelingSpline"/>
+            <point id="195" idObject="114" inUse="true" mx="0.132292" my="1.28117" showPointName="true" type="modeling"/>
+            <point id="196" idObject="107" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="197" idObject="106" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="198" idObject="113" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="210" idObject="135" inUse="true" mx="-2.41247" my="0.0183158" showPointName="true" type="modeling"/>
+            <spline id="211" idObject="147" inUse="true" type="modelingPath"/>
+            <point id="212" idObject="148" inUse="true" mx="-3.04271" my="-1.48167" showPointName="true" type="modeling"/>
+            <spline id="213" idObject="185" inUse="true" type="modelingSpline"/>
+            <point id="214" idObject="168" inUse="true" mx="-1.86521" my="-1.65083" showPointName="true" type="modeling"/>
+            <spline id="215" idObject="176" inUse="true" type="modelingSpline"/>
+            <point id="216" idObject="166" inUse="true" mx="-0.60651" my="0.456124" showPointName="true" type="modeling"/>
+            <spline id="217" idObject="178" inUse="true" type="modelingSpline"/>
+            <point id="218" idObject="169" inUse="true" mx="-1.77271" my="-1.905" showPointName="true" type="modeling"/>
+            <spline id="219" idObject="179" inUse="true" type="modelingSpline"/>
+            <point id="220" idObject="170" inUse="true" mx="-1.55296" my="0.208408" showPointName="true" type="modeling"/>
+            <spline id="221" idObject="207" inUse="true" type="modelingSpline"/>
+            <point id="222" idObject="173" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <spline id="223" idObject="208" inUse="true" type="modelingSpline"/>
+            <point id="224" idObject="171" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <spline id="225" idObject="184" inUse="true" type="modelingSpline"/>
+            <point id="226" idObject="172" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="227" idObject="4" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <spline id="228" idObject="153" inUse="true" type="modelingSpline"/>
+            <point id="229" idObject="151" inUse="true" mx="-2.33941" my="-0.128643" showPointName="true" type="modeling"/>
+            <spline id="230" idObject="152" inUse="true" type="modelingPath"/>
+            <point id="246" idObject="233" inUse="true" mx="-1.25006" my="-1.67071" showPointName="true" type="modeling"/>
+            <point id="247" idObject="234" inUse="true" mx="0.408763" my="-1.73983" showPointName="true" type="modeling"/>
+            <point id="248" idObject="242" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <spline id="249" idObject="245" inUse="true" type="modelingSpline"/>
+            <point id="250" idObject="241" inUse="true" mx="-1.70986" my="-0.572761" showPointName="true" type="modeling"/>
+            <point id="280" idObject="262" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="281" idObject="252" inUse="true" mx="-2.35088" my="-1.7929" showPointName="true" type="modeling"/>
+            <spline id="282" idObject="274" inUse="true" type="modelingPath"/>
+            <point id="283" idObject="256" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="284" idObject="275" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <spline id="285" idObject="279" inUse="true" type="modelingSpline"/>
+            <point id="298" idObject="291" inUse="true" mx="-2.69875" my="0.3175" showPointName="true" type="modeling"/>
+            <point id="299" idObject="293" inUse="true" mx="-1.97598" my="-1.00917" showPointName="true" type="modeling"/>
+            <spline id="300" idObject="297" inUse="true" type="modelingSpline"/>
+            <point id="301" idObject="294" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="302" idObject="292" inUse="true" mx="0.634698" my="0.543698" showPointName="true" type="modeling"/>
+            <point id="318" idObject="309" inUse="true" mx="-1.905" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="319" idObject="313" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <spline id="320" idObject="317" inUse="true" type="modelingSpline"/>
+            <point id="321" idObject="314" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+            <point id="322" idObject="310" inUse="true" mx="0.132292" my="0.264583" showPointName="true" type="modeling"/>
+        </modeling>
+        <details>
+            <detail forbidFlipping="false" hideMainPath="false" id="199" inLayout="true" mx="0" my="0" name="Detail" seamAllowance="false" united="false" version="2" width="0.25">
+                <data annotation="" foldPosition="" fontSize="0" height="1" letter="" mx="0" my="0" onFold="false" orientation="" quantity="1" rotation="0" rotationWay="" tilt="" visible="false" width="1"/>
+                <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
+                <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node idObject="186" reverse="1" type="NodeSpline"/>
+                    <node idObject="187" type="NodePoint"/>
+                    <node idObject="188" type="NodePoint"/>
+                    <node idObject="189" reverse="0" type="NodeSplinePath"/>
+                    <node idObject="190" type="NodePoint"/>
+                    <node idObject="191" reverse="0" type="NodeSplinePath"/>
+                    <node idObject="192" type="NodePoint"/>
+                    <node idObject="193" type="NodePoint"/>
+                    <node idObject="194" reverse="0" type="NodeSpline"/>
+                    <node idObject="195" type="NodePoint"/>
+                    <node idObject="196" type="NodePoint"/>
+                    <node idObject="197" type="NodePoint"/>
+                    <node idObject="198" type="NodePoint"/>
+                </nodes>
+            </detail>
+            <detail forbidFlipping="false" hideMainPath="false" id="231" inLayout="true" mx="0" my="0" name="Detail" seamAllowance="false" united="false" version="2" width="0.25">
+                <data annotation="" foldPosition="" fontSize="0" height="1" letter="" mx="0" my="0" onFold="false" orientation="" quantity="1" rotation="0" rotationWay="" tilt="" visible="false" width="1"/>
+                <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
+                <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node idObject="210" type="NodePoint"/>
+                    <node idObject="211" reverse="0" type="NodeSplinePath"/>
+                    <node idObject="212" type="NodePoint"/>
+                    <node idObject="213" reverse="0" type="NodeSpline"/>
+                    <node idObject="214" type="NodePoint"/>
+                    <node idObject="215" reverse="0" type="NodeSpline"/>
+                    <node idObject="216" type="NodePoint"/>
+                    <node idObject="217" reverse="0" type="NodeSpline"/>
+                    <node idObject="218" type="NodePoint"/>
+                    <node idObject="219" reverse="0" type="NodeSpline"/>
+                    <node idObject="220" type="NodePoint"/>
+                    <node idObject="221" reverse="0" type="NodeSpline"/>
+                    <node idObject="222" type="NodePoint"/>
+                    <node idObject="223" reverse="0" type="NodeSpline"/>
+                    <node idObject="224" type="NodePoint"/>
+                    <node idObject="225" reverse="0" type="NodeSpline"/>
+                    <node idObject="226" type="NodePoint"/>
+                    <node idObject="227" type="NodePoint"/>
+                    <node idObject="228" reverse="1" type="NodeSpline"/>
+                    <node idObject="229" type="NodePoint"/>
+                    <node idObject="230" reverse="1" type="NodeSplinePath"/>
+                </nodes>
+            </detail>
+            <detail forbidFlipping="false" hideMainPath="false" id="251" inLayout="true" mx="0" my="0" name="Detail" seamAllowance="false" united="false" version="2" width="0.25">
+                <data annotation="" foldPosition="" fontSize="0" height="1" letter="" mx="0" my="0" onFold="false" orientation="" quantity="1" rotation="0" rotationWay="" tilt="" visible="false" width="1"/>
+                <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
+                <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node idObject="246" type="NodePoint"/>
+                    <node idObject="247" type="NodePoint"/>
+                    <node idObject="248" type="NodePoint"/>
+                    <node idObject="249" reverse="1" type="NodeSpline"/>
+                    <node idObject="250" type="NodePoint"/>
+                </nodes>
+            </detail>
+            <detail forbidFlipping="false" hideMainPath="false" id="286" inLayout="true" mx="0" my="0" name="Detail" seamAllowance="false" united="false" version="2" width="0.25">
+                <data annotation="" foldPosition="" fontSize="0" height="1" letter="" mx="0" my="0" onFold="false" orientation="" quantity="1" rotation="0" rotationWay="" tilt="" visible="false" width="1"/>
+                <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
+                <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node idObject="280" type="NodePoint"/>
+                    <node idObject="281" type="NodePoint"/>
+                    <node idObject="282" reverse="0" type="NodeSplinePath"/>
+                    <node idObject="283" type="NodePoint"/>
+                    <node idObject="284" type="NodePoint"/>
+                    <node idObject="285" reverse="0" type="NodeSpline"/>
+                </nodes>
+            </detail>
+            <detail forbidFlipping="false" hideMainPath="false" id="303" inLayout="true" mx="0" my="0" name="Detail" seamAllowance="false" united="false" version="2" width="0.25">
+                <data annotation="" foldPosition="" fontSize="0" height="1" letter="" mx="0" my="0" onFold="false" orientation="" quantity="1" rotation="0" rotationWay="" tilt="" visible="false" width="1"/>
+                <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
+                <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node idObject="298" type="NodePoint"/>
+                    <node idObject="299" type="NodePoint"/>
+                    <node idObject="300" reverse="0" type="NodeSpline"/>
+                    <node idObject="301" type="NodePoint"/>
+                    <node idObject="302" type="NodePoint"/>
+                </nodes>
+            </detail>
+            <detail forbidFlipping="false" hideMainPath="false" id="323" inLayout="true" mx="0" my="0" name="Detail" seamAllowance="false" united="false" version="2" width="0.25">
+                <data annotation="" foldPosition="" fontSize="0" height="1" letter="" mx="0" my="0" onFold="false" orientation="" quantity="1" rotation="0" rotationWay="" tilt="" visible="false" width="1"/>
+                <patternInfo fontSize="0" height="1" mx="0" my="0" rotation="0" visible="false" width="1"/>
+                <grainline arrows="0" length="1" mx="0" my="0" rotation="90" visible="false"/>
+                <nodes>
+                    <node idObject="318" type="NodePoint"/>
+                    <node idObject="319" type="NodePoint"/>
+                    <node idObject="320" reverse="0" type="NodeSpline"/>
+                    <node idObject="321" type="NodePoint"/>
+                    <node idObject="322" type="NodePoint"/>
+                </nodes>
+            </detail>
+        </details>
+        <groups/>
+    </draw>
+</pattern>
