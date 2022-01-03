@@ -24,6 +24,20 @@ I'll be entirely honest here. Yes, you can use these patterns and my videos as I
 
 I've provided files containing all the sizes in the tables in the book. They seemed a little wonky to me, but I'm not really an expert on sizes.
 
+### Corset Base
+
+![Screenshot](Mandy%20Barrington/Images/Corset%20Base.png)
+
+The corset base is based on the bodice block from the book. The bodice block and the corset base have multiple severe problems which I'm trying to work through. I understand that in a book, Mandy avoids employing trigonometry and calculus as I believe it would terrify most people. This means that when flat drafting you'll never get the curves or the intersections right. But I could imagine how terrified people would be if they read the lines
+
+```
+Now calculate the second derivative of the Bezier curve in Berenstein's form and then calculate the adjacent angle to the....
+```
+
+But honestly, it's quite impossible to make a proper block without considering ratios rather than arbitrary values constant values. I'm working through these little by little and I've made some big changes to my version of the Corset Base in hopes of being accurate and within the spirit of Mandy's intents.
+
+I'm currently evaluating the blocks to attempt to consider vertical bust position and fullness. Using the book as a reference, unless the intended wearer of the corset is almost precisely the same dimensions as Mandy, the block will be completely out of shape and will require a whole lot of alterations. And this is fine in traditional design where draping is a considerable component of the job. But I believe that if the designs in this book are updated to consider the shape of the wearer who more than likely won't be Mandy's body double, it should be possible to get it right on the first mockup nearly every time.
+
 ### 1598 Pair of Bodies
 
 ![Screenshot](Mandy%20Barrington/Images/1598%20Pair%20of%20Bones%20Screenshot.png)

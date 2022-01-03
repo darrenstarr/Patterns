@@ -5,7 +5,7 @@
     <unit>cm</unit>
     <description/>
     <notes/>
-    <measurements>../Sizes/Size 10.vit</measurements>
+    <measurements>../Sizes/Size 18.vit</measurements>
     <increments/>
     <draw name="Pattern piece 1">
         <calculation>
@@ -30,14 +30,12 @@
             <point firstPoint="15" id="19" mx="0.132292" my="0.264583" name="P11" secondPoint="12" showPointName="true" type="pointOfIntersection"/>
             <point firstPoint="11" id="20" length="(CurrentLength-30)/2-1.3" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="P12" secondPoint="12" showPointName="true" type="alongLine"/>
             <point firstPoint="20" id="21" mx="0.132292" my="0.264583" name="P13" secondPoint="3" showPointName="true" type="pointOfIntersection"/>
-            <point angle="0" basePoint="7" id="22" length="neck_circ/5" lineColor="black" lineType="dotLine" mx="0.132292" my="0.264583" name="P14" showPointName="true" type="endLine"/>
-            <point angle="90" basePoint="22" id="23" length="1.3" lineColor="black" lineType="dotLine" mx="0.132292" my="0.264583" name="P15" showPointName="true" type="endLine"/>
-            <spline angle1="0" angle2="250" color="black" id="24" length1="Line_P1_P14*0.75" length2="Line_P14_P15*0.9" penStyle="solidLine" point1="7" point4="23" type="simpleInteractive"/>
-            <line firstPoint="23" id="25" lineColor="black" lineType="solidLine" secondPoint="17"/>
-            <point angle="45" basePoint="19" id="26" length="2.5" lineColor="black" lineType="dotLine" mx="0.132292" my="0.264583" name="P16" showPointName="true" type="endLine"/>
-            <spline angle1="AngleLine_P15_P9-90" angle2="AngleLine_P6_P7+90" color="black" id="27" length1="2.94445" length2="1" penStyle="solidLine" point1="17" point4="15" type="simpleInteractive"/>
-            <spline angle1="AngleLine_P6_P7-90" angle2="AngleLine_P11_P16+90" color="black" id="28" length1="1" length2="2.97526" penStyle="solidLine" point1="15" point4="26" type="simpleInteractive"/>
-            <spline angle1="AngleLine_P11_P16-90" angle2="180" color="black" id="29" length1="1.5" length2="2" penStyle="solidLine" point1="26" point4="20" type="simpleInteractive"/>
+            <line firstPoint="20" id="86" lineColor="black" lineType="none" secondPoint="19"/>
+            <point angle="0" basePoint="7" id="22" length="neck_circ/5" lineColor="black" lineType="dotLine" mx="0.571863" my="-0.211619" name="P14" showPointName="true" type="endLine"/>
+            <point angle="90" basePoint="22" id="23" length="Line_P1_P8/2" lineColor="black" lineType="dotLine" mx="0.608494" my="-0.797714" name="P15" showPointName="true" type="endLine"/>
+            <spline angle1="0" angle2="250" color="black" id="24" length1="Line_P1_P14*0.75" length2="Line_P14_P15*0.9" penStyle="dotLine" point1="7" point4="23" type="simpleInteractive"/>
+            <line firstPoint="23" id="25" lineColor="black" lineType="dotLine" secondPoint="17"/>
+            <point angle="45" basePoint="19" id="26" length="Line_P12_P11/2.5" lineColor="black" lineType="dotLine" mx="0.431822" my="-0.805167" name="P16" showPointName="true" type="endLine"/>
             <line firstPoint="18" id="30" lineColor="black" lineType="dotLine" secondPoint="19"/>
             <line firstPoint="20" id="31" lineColor="black" lineType="dotLine" secondPoint="21"/>
             <point firstPoint="12" id="32" length="neck_back_to_waist_b/10" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="P17" secondPoint="2" showPointName="true" type="alongLine"/>
@@ -45,8 +43,7 @@
             <point firstPoint="2" id="34" length="neck_circ/5+3" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="P19" secondPoint="32" showPointName="true" type="alongLine"/>
             <line firstPoint="33" id="35" lineColor="black" lineType="dotLine" secondPoint="34"/>
             <point angle="AngleLine_P18_P19-90" basePoint="2" id="36" length="abs(Line_B_P18*cosD(AngleLine_P18_P19-90))" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="P20" showPointName="true" type="endLine"/>
-            <point firstPoint="2" id="37" length="CurrentLength+1.5" lineColor="black" lineType="dotLine" mx="0.132292" my="0.264583" name="P21" secondPoint="36" showPointName="true" type="alongLine"/>
-            <spline angle1="0" angle2="180" color="black" id="38" length1="0" length2="Line_B_P18/2" penStyle="solidLine" point1="33" point4="34" type="simpleInteractive"/>
+            <point firstPoint="2" id="37" length="Line_B_P18" lineColor="black" lineType="dotLine" mx="0.132292" my="0.264583" name="P21" secondPoint="36" showPointName="true" type="alongLine"/>
             <point firstPoint="33" id="39" length="Line_P15_P9-0.6" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="P22" secondPoint="1" showPointName="true" type="alongLine"/>
             <point angle="0" firstPoint="39" id="40" length="5" lineColor="black" lineType="dotLine" mx="0.132292" my="0.264583" name="P23" secondPoint="1" showPointName="true" type="normal"/>
             <point firstPoint="33" id="41" length="CurrentLength + (bust_circ*3/5-across_chest_f)/3" lineColor="black" lineType="dotLine" mx="0.132292" my="0.264583" name="P24" secondPoint="40" showPointName="true" type="alongLine"/>
@@ -60,28 +57,34 @@
             <point firstPoint="46" id="50" length="2" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="P30" secondPoint="41" showPointName="true" type="alongLine"/>
             <point firstPoint="50" id="51" length=" (bust_circ*3/5-across_chest_f)/3" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="P31" secondPoint="41" showPointName="true" type="alongLine"/>
             <point firstPoint="51" id="52" length="CurrentLength/2" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="P33" secondPoint="50" showPointName="true" type="alongLine"/>
-            <line firstPoint="50" id="53" lineColor="black" lineType="solidLine" secondPoint="49"/>
-            <point firstPoint="49" id="54" length="Line_P30_P29" lineColor="black" lineType="solidLine" mx="0.132292" my="0.264583" name="P32" secondPoint="51" showPointName="true" type="alongLine"/>
+            <line firstPoint="50" id="53" lineColor="black" lineType="dotLine" secondPoint="49"/>
+            <point firstPoint="49" id="54" length="Line_P30_P29" lineColor="black" lineType="dotLine" mx="0.132292" my="0.264583" name="P32" secondPoint="51" showPointName="true" type="alongLine"/>
             <point angle="AngleLine_P24_P23+90" basePoint="52" id="55" length="Line_P22_P23" lineColor="black" lineType="dotLine" mx="0.132292" my="0.264583" name="P34" showPointName="true" type="endLine"/>
             <point angle="292.412" basePoint="55" id="56" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="P35" p1Line="41" p2Line="54" showPointName="true" type="lineIntersectAxis"/>
-            <line firstPoint="41" id="57" lineColor="black" lineType="solidLine" secondPoint="56"/>
-            <line firstPoint="56" id="58" lineColor="black" lineType="solidLine" secondPoint="50"/>
+            <line firstPoint="41" id="57" lineColor="black" lineType="dotLine" secondPoint="56"/>
+            <line firstPoint="56" id="58" lineColor="black" lineType="dotLine" secondPoint="50"/>
             <point angle="180" basePoint="32" id="59" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="P36" p1Line="54" p2Line="49" showPointName="true" type="lineIntersectAxis"/>
             <point angle="0" basePoint="59" id="61" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="P37" p1Line="50" p2Line="49" showPointName="true" type="lineIntersectAxis"/>
             <line firstPoint="59" id="62" lineColor="black" lineType="dotLine" secondPoint="61"/>
-            <point firstPoint="32" id="63" length="across_chest_f/2+Line_P36_P37" lineColor="black" lineType="dotLine" mx="0.132292" my="0.264583" name="P38" secondPoint="59" showPointName="true" type="alongLine"/>
+            <point firstPoint="32" id="63" length="across_chest_f/2+Line_P36_P37" lineColor="black" lineType="dotLine" mx="-2.17922" my="-0.937404" name="P38" secondPoint="59" showPointName="true" type="alongLine"/>
             <point firstPoint="63" id="64" mx="0.132292" my="0.264583" name="P39" secondPoint="12" showPointName="true" type="pointOfIntersection"/>
-            <point angle="135" basePoint="64" id="65" length="2" lineColor="black" lineType="dotLine" mx="0.132292" my="0.264583" name="P40" showPointName="true" type="endLine"/>
-            <spline angle1="AngleLine_P24_P35-90" angle2="90" color="black" id="66" length1="2.5" length2="3" penStyle="solidLine" point1="41" point4="63" type="simpleInteractive"/>
-            <spline angle1="-90" angle2="AngleLine_P39_P40-90" color="black" id="67" length1="1" length2="1" penStyle="solidLine" point1="63" point4="65" type="simpleInteractive"/>
-            <line firstPoint="33" id="69" lineColor="black" lineType="solidLine" secondPoint="50"/>
+            <point angle="135" basePoint="64" id="65" length="2" lineColor="black" lineType="dotLine" mx="-1.90184" my="-0.475102" name="P40" showPointName="true" type="endLine"/>
+            <line firstPoint="33" id="69" lineColor="black" lineType="dotLine" secondPoint="50"/>
             <point firstPoint="11" id="70" length="(CurrentLength+30)/2-1.3" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="P12_2" secondPoint="12" showPointName="true" type="alongLine"/>
             <point firstPoint="70" id="71" mx="0.132292" my="0.264583" name="P13_2" secondPoint="4" showPointName="true" type="pointOfIntersection"/>
-            <spline angle1="AngleLine_P39_P40+90" angle2="0" color="black" id="72" length1="2.5" length2="0" penStyle="solidLine" point1="65" point4="70" type="simpleInteractive"/>
             <line firstPoint="70" id="73" lineColor="black" lineType="dotLine" secondPoint="71"/>
             <point firstPoint="20" id="74" length="CurrentLength/2" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="C_Line" secondPoint="70" showPointName="true" type="alongLine"/>
             <point firstPoint="74" id="75" mx="0.132292" my="0.264583" name="C_Line2" secondPoint="4" showPointName="true" type="pointOfIntersection"/>
             <line firstPoint="74" id="76" lineColor="black" lineType="dotLine" secondPoint="75"/>
+            <point firstPoint="20" id="84" length="CurrentLength/5" lineColor="black" lineType="none" mx="-1.74625" my="0.238125" name="P12a" secondPoint="19" showPointName="true" type="alongLine"/>
+            <point firstPoint="15" id="88" length="CurrentLength/10" lineColor="black" lineType="none" mx="0.132292" my="0.264583" name="P7c" secondPoint="14" showPointName="true" type="alongLine"/>
+            <spline color="black" id="89" penStyle="dotLine" point1="17" point2="88" point3="19" point4="20" type="cubicBezier"/>
+            <point angle="0" firstPoint="41" id="91" length="-Line_P29_P32/18" lineColor="black" lineType="dashLine" mx="0.132292" my="0.264583" name="P24a" secondPoint="54" showPointName="true" type="normal"/>
+            <spline color="black" id="92" penStyle="dotLine" point1="70" point2="42" point3="91" point4="41" type="cubicBezier"/>
+            <point angle="0" firstPoint="34" id="93" length="Line_B_P18/2" lineColor="black" lineType="dashLine" mx="0.132292" my="0.264583" name="P19a" secondPoint="2" showPointName="true" type="normal"/>
+            <spline color="black" id="94" penStyle="dotLine" point1="33" point2="33" point3="93" point4="34" type="cubicBezier"/>
+            <point angle="0" firstPoint="23" id="95" length="-Line_P14_P15" lineColor="black" lineType="dashLine" mx="-1.0399" my="1.32688" name="P15a" secondPoint="17" showPointName="true" type="normal"/>
+            <point firstPoint="7" id="96" length="CurrentLength*4/5" lineColor="black" lineType="none" mx="-1.5161" my="0.118059" name="P1a" secondPoint="22" showPointName="true" type="alongLine"/>
         </calculation>
         <modeling/>
         <details/>
