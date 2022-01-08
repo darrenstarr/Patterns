@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vit>
+    <!--Measurements created with Seamly2D v0.6.0.1 (http://seamly.net/).-->
+    <version>0.3.3</version>
+    <read-only>false</read-only>
+    <notes/>
+    <unit>cm</unit>
+    <pm_system>998</pm_system>
+    <personal>
+        <family-name/>
+        <given-name/>
+        <birth-date>1800-01-01</birth-date>
+        <gender>unknown</gender>
+        <email/>
+    </personal>
+    <body-measurements>
+        <m name="bust_circ" value="70.06"/>
+        <m name="waist_circ" value="54"/>
+        <m name="bustpoint_to_bustpoint" value="14.46"/>
+        <m name="across_chest_f" value="29.2"/>
+        <m name="neck_front_to_bust_f" value="19"/>
+        <m name="bustpoint_to_shoulder_tip" value="21.54"/>
+        <m name="bustpoint_to_waist_front" value="13.24"/>
+        <m name="bustpoint_to_shoulder_center" value="22"/>
+        <m name="neck_arc_f" value="8.2*2"/>
+        <m name="neck_arc_b" value="7.48*2"/>
+        <m name="shoulder_length" value="10.45"/>
+        <m name="waist_arc_b" value="12.28*2"/>
+        <m name="bust_arc_b" value="16.67*2"/>
+        <m name="across_back_b" value="27.8"/>
+        <m name="bust_to_waist_b" value="13.62"/>
+        <m name="across_back_to_waist_b" value="23.27"/>
+        <m name="neck_back_to_waist_b" value="33.76"/>
+        <m name="neck_width" value="5.4*2"/>
+        <m name="armpit_to_waist_side" value="16.41"/>
+        <m name="armscye_length" value="37"/>
+    </body-measurements>
+</vit>
