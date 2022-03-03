@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vit>
+    <!--Measurements created with Seamly2D v0.6.0.1 (http://seamly.net/).-->
+    <version>0.3.3</version>
+    <read-only>false</read-only>
+    <notes/>
+    <unit>cm</unit>
+    <pm_system>998</pm_system>
+    <personal>
+        <family-name/>
+        <given-name/>
+        <birth-date>1800-01-01</birth-date>
+        <gender>unknown</gender>
+        <email/>
+    </personal>
+    <body-measurements>
+        <m name="waist_circ" value="37*2"/>
+        <m name="hip_circ" value="48*2"/>
+        <m name="height_waist_front" value="119"/>
+        <m name="leg_crotch_to_floor" value="height_waist_front-26"/>
+        <m name="height_hip" value="height_waist_front-20"/>
+        <m name="height_knee" value="height_waist_front-60"/>
+        <m name="height_ankle" value="height_waist_front-104"/>
+    </body-measurements>
+</vit>
